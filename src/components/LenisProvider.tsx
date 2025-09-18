@@ -22,7 +22,8 @@ export default function LenisProvider({ children }: { children: ReactNode }) {
     return () => cancelAnimationFrame(rafId);
   }, []);
 
-  return children as any;
+  return children;
 }
+
 
 
