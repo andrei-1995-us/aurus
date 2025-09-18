@@ -8,7 +8,6 @@ export default function LenisProvider({ children }: { children: ReactNode }) {
     const lenis = new Lenis({
       duration: 1.1,
       smoothWheel: true,
-      smoothTouch: false,
       easing: (t: number) => 1 - Math.pow(1 - t, 2),
     });
 
@@ -24,6 +23,3 @@ export default function LenisProvider({ children }: { children: ReactNode }) {
 
   return children;
 }
-
-
-
